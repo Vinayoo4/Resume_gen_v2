@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  cursor: none;
+}
+
+a, button {
+  cursor: none;
+}
+
+* {
+  cursor: none !important;
+}
+
+::selection {
+  background-color: #3b82f6;
+  color: white;
+}
+
+input, textarea {
+  @apply border-gray-300 rounded-md shadow-sm;
+}
+
+input:focus, textarea:focus {
+  @apply ring-2 ring-blue-500 border-blue-500;
+}
+
+.form-input {
+  @apply mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500;
+}
