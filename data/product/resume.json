@@ -1,0 +1,121 @@
+[
+  {
+    "userId": "1779887892512",
+    "slug": "jane-vibe",
+    "theme": "vibe",
+    "name": "Jane Doe",
+    "bio": "Expert Software Engineer",
+    "links": [
+      {
+        "platform": "GitHub",
+        "url": "https://github.com/jane"
+      }
+    ],
+    "sections": [
+      {
+        "id": "s1",
+        "type": "experience",
+        "title": "Work Experience",
+        "items": [
+          {
+            "id": "i1",
+            "title": "Senior Engineer",
+            "subtitle": "Tech Corp",
+            "dateRange": "2020-Present",
+            "description": "Built cool things."
+          }
+        ]
+      }
+    ],
+    "views": 1,
+    "createdAt": "2026-05-27T13:18:12.529Z",
+    "updatedAt": "2026-05-27T13:18:12.537Z"
+  },
+  {
+    "userId": "1779888943049",
+    "slug": "user-1779888943049",
+    "theme": "vibe",
+    "name": "PWA Creator",
+    "bio": "I build awesome standalone web apps.",
+    "links": [],
+    "sections": [],
+    "views": 1,
+    "createdAt": "2026-05-27T13:35:43.137Z",
+    "updatedAt": "2026-05-27T13:35:46.645Z"
+  },
+  {
+    "userId": "1779889117751",
+    "slug": "user-1779889117751",
+    "theme": "vibe",
+    "name": "PWA Creator",
+    "bio": "I build awesome standalone web apps.",
+    "links": [],
+    "sections": [
+      {
+        "id": "gqsty4f",
+        "type": "experience",
+        "title": "New Section",
+        "items": [
+          {
+            "id": "qslcg6b",
+            "title": "Lead Developer",
+            "subtitle": "Tech Corp"
+          }
+        ]
+      }
+    ],
+    "views": 1,
+    "createdAt": "2026-05-27T13:38:37.819Z",
+    "updatedAt": "2026-05-27T13:38:43.552Z"
+  },
+  {
+    "userId": "1779895363879",
+    "slug": "user-1779895363879",
+    "theme": "vibe",
+    "name": "PWA Creator",
+    "bio": "I build awesome standalone web apps.",
+    "links": [],
+    "sections": [
+      {
+        "id": "lkoycgg",
+        "type": "experience",
+        "title": "New Section",
+        "items": [
+          {
+            "id": "ymp3gqa",
+            "title": "Lead Developer",
+            "subtitle": "Tech Corp"
+          }
+        ]
+      }
+    ],
+    "views": 1,
+    "createdAt": "2026-05-27T15:22:44.110Z",
+    "updatedAt": "2026-05-27T15:22:49.710Z"
+  },
+  {
+    "userId": "1779895993350",
+    "slug": "user-1779895993350",
+    "theme": "vibe",
+    "name": "PWA Creator",
+    "bio": "I build awesome standalone web apps.",
+    "links": [],
+    "sections": [
+      {
+        "id": "0x9ngou",
+        "type": "experience",
+        "title": "New Section",
+        "items": [
+          {
+            "id": "q55vi85",
+            "title": "Lead Developer",
+            "subtitle": "Tech Corp"
+          }
+        ]
+      }
+    ],
+    "views": 1,
+    "createdAt": "2026-05-27T15:33:13.379Z",
+    "updatedAt": "2026-05-27T15:33:19.100Z"
+  }
+]
