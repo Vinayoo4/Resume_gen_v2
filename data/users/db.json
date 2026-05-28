@@ -1,0 +1,56 @@
+[
+  {
+    "id": "1779887725283",
+    "email": "test3@example.com",
+    "passwordHash": "3ff2f753aea866d86eb81d14bc50966ac84260864ffbbab9721620c1b9336f4aa3e397f8fed6c5ad4b54818b6497b3f6af94017e27f1a357e17da80cde42b177",
+    "salt": "1bc8bf810d1285cef5fc1b970158327c",
+    "role": "user",
+    "createdAt": "2026-05-27T13:15:25.283Z",
+    "updatedAt": "2026-05-27T13:15:25.283Z"
+  },
+  {
+    "id": "1779887892512",
+    "email": "jane@example.com",
+    "passwordHash": "96b7f22e848260ad31147d2ea231d647a20c171c29eec589905f1e59ed11195272cedd16523e169eaef0f4c6731579925c93c449899ae887f1442b9f664f675b",
+    "salt": "d021cf0c2ca2c55f4a53c0ce4b26c073",
+    "role": "user",
+    "createdAt": "2026-05-27T13:18:12.512Z",
+    "updatedAt": "2026-05-27T13:18:12.512Z"
+  },
+  {
+    "id": "1779888943049",
+    "email": "pwa@example.com",
+    "passwordHash": "c581a87268ba568b265ba8150aac9ff18464575ac33f6283753ce055be62aaeb2c36c97a34a654d60918acc0a9fdaaf4eb3518f1240e9b20688345bca3766fa4",
+    "salt": "4b5b8f59bace8de48d8f941547225127",
+    "role": "user",
+    "createdAt": "2026-05-27T13:35:43.049Z",
+    "updatedAt": "2026-05-27T13:35:43.049Z"
+  },
+  {
+    "id": "1779889117751",
+    "email": "pwa2@example.com",
+    "passwordHash": "6cca8c0772664d82381cda59f1e23f93a9e2f371851ada4b4d86f7e28705b06202e67322d0f4a7b12cb528ff055b3736dd58ad85fbab539358c9a8b868518b49",
+    "salt": "04d1f927f45175c3368aa0bf7b8547cf",
+    "role": "user",
+    "createdAt": "2026-05-27T13:38:37.751Z",
+    "updatedAt": "2026-05-27T13:38:37.751Z"
+  },
+  {
+    "id": "1779895363879",
+    "email": "brand_new_user@example.com",
+    "passwordHash": "dbb65f9b1c8a831dccfeed244b2e546f8e8194ff8251c3dd2522966dfca77fa1b365ca443168174d00f9d6ae411631c4ffb8a65d0db6c9f488dbde855ef129f3",
+    "salt": "64cc9d2afe61bf13b85cbcd91799c0f5",
+    "role": "user",
+    "createdAt": "2026-05-27T15:22:43.879Z",
+    "updatedAt": "2026-05-27T15:22:43.879Z"
+  },
+  {
+    "id": "1779895993350",
+    "email": "production_test@example.com",
+    "passwordHash": "8e7dda005b15ca2301f5db66e4aae21fc1019ba4a7496c40f69055c07b4365fe28a722abfb39ba9ade874e186f9f02b916d41a547be1c4980fdc2900bebd024a",
+    "salt": "1e405134fc98de680527af154ff4a497",
+    "role": "user",
+    "createdAt": "2026-05-27T15:33:13.350Z",
+    "updatedAt": "2026-05-27T15:33:13.350Z"
+  }
+]
