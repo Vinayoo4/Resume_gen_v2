@@ -31,7 +31,7 @@ export const useResumeStore = defineStore('resume', () => {
       const draft = JSON.parse(draftStr);
       try {
         await api.put('/resume/me', draft, auth.token);
-        console.log('Draft synced to server');
+        // console.log('Draft synced to server');
       } catch (e) {
         console.error('Failed to sync draft');
       }

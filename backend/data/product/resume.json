@@ -1,0 +1,27 @@
+[
+  {
+    "userId": "1779948836309",
+    "slug": "user-1779948836309",
+    "theme": "vibe",
+    "name": "PWA Creator",
+    "bio": "I build awesome standalone web apps.",
+    "links": [],
+    "sections": [
+      {
+        "id": "o9tflx6",
+        "type": "experience",
+        "title": "New Section",
+        "items": [
+          {
+            "id": "caw1xxn",
+            "title": "Lead Developer",
+            "subtitle": "Tech Corp"
+          }
+        ]
+      }
+    ],
+    "views": 1,
+    "createdAt": "2026-05-28T06:13:56.496Z",
+    "updatedAt": "2026-05-28T06:14:02.085Z"
+  }
+]

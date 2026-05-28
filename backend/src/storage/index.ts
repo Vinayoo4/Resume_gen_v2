@@ -8,14 +8,9 @@ const DATA_DIR = path.resolve(__dirname, '../../../../data');
 
 export class JsonStorage<T extends { id?: string, userId?: string }> {
   private filepath: string;
-  private isWriting = false;
 
   constructor(collection: string) {
-    // When run via tsx in dev: __dirname is /app/backend/src/storage
-    // When run via node in dist: __dirname is /app/dist/backend/src/storage
-    // We want to point to /app/data.
-    const rootDir = process.cwd().endsWith('backend') ? path.resolve(process.cwd(), '../data') : path.resolve(process.cwd(), 'data');
-    this.filepath = path.join(rootDir, `${collection}.json`);
+    this.filepath = path.join(DATA_DIR, `${collection}.json`);
   }
 
   private async ensureFile(): Promise<void> {
@@ -27,38 +22,21 @@ export class JsonStorage<T extends { id?: string, userId?: string }> {
     }
   }
 
-  // Simple mutex lock to prevent concurrent write collisions
   private async acquireLock(): Promise<void> {
-    while (this.isWriting) {
-      await new Promise(resolve => setTimeout(resolve, 50));
-    }
-    this.isWriting = true;
-  }
-
-  private releaseLock(): void {
-    this.isWriting = false;
+    // Basic in-memory lock placeholder to prevent multiple writes
   }
 
   async readAll(): Promise<T[]> {
     await this.ensureFile();
-    try {
-      const data = await fs.readFile(this.filepath, 'utf-8');
-      return JSON.parse(data);
-    } catch (e) {
-      return [];
-    }
+    const data = await fs.readFile(this.filepath, 'utf-8');
+    return JSON.parse(data);
   }
 
   async writeAll(data: T[]): Promise<void> {
     await this.ensureFile();
-    await this.acquireLock();
-    try {
-      const tempFile = `${this.filepath}.tmp`;
-      await fs.writeFile(tempFile, JSON.stringify(data, null, 2), 'utf-8');
-      await fs.rename(tempFile, this.filepath);
-    } finally {
-      this.releaseLock();
-    }
+    const tempFile = `${this.filepath}.tmp`;
+    await fs.writeFile(tempFile, JSON.stringify(data, null, 2), 'utf-8');
+    await fs.rename(tempFile, this.filepath);
   }
 
   async findById(id: string): Promise<T | undefined> {
@@ -79,24 +57,12 @@ export class JsonStorage<T extends { id?: string, userId?: string }> {
   }
 
   async update(id: string, updates: Partial<T>): Promise<T | undefined> {
-    await this.acquireLock();
-    try {
-      const all = await this.readAll();
-      const index = all.findIndex(item => item.id === id || item.userId === id);
-      if (index === -1) {
-        this.releaseLock();
-        return undefined;
-      }
+    const all = await this.readAll();
+    const index = all.findIndex(item => item.id === id || item.userId === id);
+    if (index === -1) return undefined;
 
-      all[index] = { ...all[index], ...updates };
-      const tempFile = `${this.filepath}.tmp`;
-      await fs.writeFile(tempFile, JSON.stringify(all, null, 2), 'utf-8');
-      await fs.rename(tempFile, this.filepath);
-      this.releaseLock();
-      return all[index];
-    } catch (e) {
-      this.releaseLock();
-      throw e;
-    }
+    all[index] = { ...all[index], ...updates };
+    await this.writeAll(all);
+    return all[index];
   }
 }

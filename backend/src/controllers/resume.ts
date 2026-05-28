@@ -35,30 +35,15 @@ export const getMyResume = async (req: AuthRequest, res: Response) => {
 export const updateResume = async (req: AuthRequest, res: Response) => {
   try {
     const userId = req.user!.userId;
-
-    // Explicitly destructure allowed fields to prevent IDOR / mass assignment
-    const { slug, theme, name, bio, links, sections } = req.body;
+    const updates = req.body;
 
     const resume = await resumeStorage.findOne(r => r.userId === userId);
     if (!resume) {
       return res.status(404).json({ error: 'Resume not found' });
     }
 
-    // Ensure slug uniqueness if changed
-    if (slug && slug !== resume.slug) {
-        const existingSlug = await resumeStorage.findOne(r => r.slug === slug);
-        if (existingSlug) {
-            return res.status(409).json({ error: 'Slug already in use' });
-        }
-    }
-
     const updated = await resumeStorage.update(userId, {
-      ...(slug !== undefined && { slug }),
-      ...(theme !== undefined && { theme }),
-      ...(name !== undefined && { name }),
-      ...(bio !== undefined && { bio }),
-      ...(links !== undefined && { links }),
-      ...(sections !== undefined && { sections }),
+      ...updates,
       updatedAt: new Date().toISOString()
     });
 

@@ -1,0 +1,11 @@
+[
+  {
+    "id": "1779948836309",
+    "email": "pwa2@example.com",
+    "passwordHash": "1739cf46b9181e7a86f28546857b60b63f35e9a4fdf29161d4df954648533313db4778b482ddba3a8502c5d995c3bb8d65d6497dec9392ebde24a9d43bec3f85",
+    "salt": "76e0db51770909859c37e8ea3ff5ba44",
+    "role": "user",
+    "createdAt": "2026-05-28T06:13:56.309Z",
+    "updatedAt": "2026-05-28T06:13:56.309Z"
+  }
+]

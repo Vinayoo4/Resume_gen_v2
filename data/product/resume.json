@@ -67,55 +67,5 @@
     "views": 1,
     "createdAt": "2026-05-27T13:38:37.819Z",
     "updatedAt": "2026-05-27T13:38:43.552Z"
-  },
-  {
-    "userId": "1779895363879",
-    "slug": "user-1779895363879",
-    "theme": "vibe",
-    "name": "PWA Creator",
-    "bio": "I build awesome standalone web apps.",
-    "links": [],
-    "sections": [
-      {
-        "id": "lkoycgg",
-        "type": "experience",
-        "title": "New Section",
-        "items": [
-          {
-            "id": "ymp3gqa",
-            "title": "Lead Developer",
-            "subtitle": "Tech Corp"
-          }
-        ]
-      }
-    ],
-    "views": 1,
-    "createdAt": "2026-05-27T15:22:44.110Z",
-    "updatedAt": "2026-05-27T15:22:49.710Z"
-  },
-  {
-    "userId": "1779895993350",
-    "slug": "user-1779895993350",
-    "theme": "vibe",
-    "name": "PWA Creator",
-    "bio": "I build awesome standalone web apps.",
-    "links": [],
-    "sections": [
-      {
-        "id": "0x9ngou",
-        "type": "experience",
-        "title": "New Section",
-        "items": [
-          {
-            "id": "q55vi85",
-            "title": "Lead Developer",
-            "subtitle": "Tech Corp"
-          }
-        ]
-      }
-    ],
-    "views": 1,
-    "createdAt": "2026-05-27T15:33:13.379Z",
-    "updatedAt": "2026-05-27T15:33:19.100Z"
   }
 ]

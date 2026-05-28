@@ -34,23 +34,5 @@
     "role": "user",
     "createdAt": "2026-05-27T13:38:37.751Z",
     "updatedAt": "2026-05-27T13:38:37.751Z"
-  },
-  {
-    "id": "1779895363879",
-    "email": "brand_new_user@example.com",
-    "passwordHash": "dbb65f9b1c8a831dccfeed244b2e546f8e8194ff8251c3dd2522966dfca77fa1b365ca443168174d00f9d6ae411631c4ffb8a65d0db6c9f488dbde855ef129f3",
-    "salt": "64cc9d2afe61bf13b85cbcd91799c0f5",
-    "role": "user",
-    "createdAt": "2026-05-27T15:22:43.879Z",
-    "updatedAt": "2026-05-27T15:22:43.879Z"
-  },
-  {
-    "id": "1779895993350",
-    "email": "production_test@example.com",
-    "passwordHash": "8e7dda005b15ca2301f5db66e4aae21fc1019ba4a7496c40f69055c07b4365fe28a722abfb39ba9ade874e186f9f02b916d41a547be1c4980fdc2900bebd024a",
-    "salt": "1e405134fc98de680527af154ff4a497",
-    "role": "user",
-    "createdAt": "2026-05-27T15:33:13.350Z",
-    "updatedAt": "2026-05-27T15:33:13.350Z"
   }
 ]
